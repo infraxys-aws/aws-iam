@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "label": "Attach %policy_name%",
+  "type": "AWS-IAM-POLICY-ATTACHMENT",
+  "autoExpand": false,
+  "skipEveryInstanceFiles": false,
+  "limitToAllowedChildren": false,
+  "autoGenerate": false,
+  "inheritFilesFromPacketGuid": "",
+  "key": "",
+  "infoHtml": "",
+  "attributes": [
+    {
+      "name": "policy_name",
+      "caption": "Policy name",
+      "type": "java.lang.String",
+      "formColumn": 1,
+      "formOrder": 1100,
+      "visibility": "ALWAYS VISIBLE",
+      "writability": "ALWAYS",
+      "required": true,
+      "isPartOfKey": true,
+      "listOfValues": "ReadOnlyAccess,AdministratorAccess",
+      "referenceFilter": "",
+      "referenceValueAttributeName": "",
+      "referenceChildGuidFilter": "",
+      "newItemsAllowed": true,
+      "parseWithVelocity": false,
+      "cloneAttribute": true,
+      "autoExport": true,
+      "inputPrompt": "",
+      "tooltip": "\u003cp\u003eAdd the name of the AWS-managed policy to attach.\u003c/p\u003e",
+      "scope": "Instance"
+    }
+  ],
+  "files": [
+    {
+      "guid": "d775129c-6792-49d3-bda7-5fefaadf1d31",
+      "filename": "aws_managed_policy_attachment.tf",
+      "includeName": "",
+      "menuCaption": "aws_managed_policy_attachment.tf",
+      "directory": "",
+      "runsIndependent": false,
+      "runsParallel": false,
+      "runBeforeIndependentActions": false,
+      "parseWithVelocity": true,
+      "executable": false,
+      "saveWith": "CURRENT INSTANCE",
+      "isInteractive": false,
+      "hideRunnerWindow": false,
+      "timeoutSeconds": 3600,
+      "key": "",
+      "menuOrder": 100,
+      "menuSeparatorBefore": false,
+      "hideFromInstanceActionsMenu": false,
+      "hideFromBottomMenu": false,
+      "menuPath": ""
+    }
+  ],
+  "allowedChildren": []
+}

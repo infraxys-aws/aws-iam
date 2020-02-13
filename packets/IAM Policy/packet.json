@@ -36,6 +36,7 @@
       "writability": "ALWAYS",
       "required": true,
       "isPartOfKey": false,
+      "height": 400,
       "listOfValues": "",
       "cacheMinutes": 0,
       "newItemsAllowed": false,
