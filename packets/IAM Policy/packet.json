@@ -1,5 +1,6 @@
 {
   "version": "1.0",
+  "id": "f9e5009a-2a78-452a-9792-712b7b0de532",
   "label": "Policy %policy_name%",
   "type": "IAM_POLICY",
   "autoExpand": false,
@@ -9,6 +10,7 @@
   "key": "TF-IAM-POLICY",
   "attributes": [
     {
+      "id": "02282110-5390-4fca-8a55-7204c9815282",
       "name": "description",
       "caption": "description",
       "type": "java.lang.String",
@@ -26,6 +28,7 @@
       "scope": "Instance"
     },
     {
+      "id": "655ea17b-deb5-4870-a9d1-6be9bd710182",
       "name": "policy",
       "caption": "Policy",
       "type": "byte[]",
@@ -47,6 +50,7 @@
       "defaultValue": "{\n   \"Version\": \"2012-10-17\",\n   \"Statement\" : [\n      {\n        \"Action\": [\n          \"ec2:StartInstances\",\n        ],\n        \"Effect\": \"Allow\",\n        \"Resource\": \"*\"\n      }\n    ]\n}"
     },
     {
+      "id": "f2d03152-abef-4217-ba75-8a3c5132ddad",
       "name": "policy_name",
       "caption": "Policy name",
       "type": "java.lang.String",
@@ -69,7 +73,7 @@
   ],
   "files": [
     {
-      "guid": "638aa5e3-74cf-4064-a34a-62206ffff729",
+      "id": "638aa5e3-74cf-4064-a34a-62206ffff729",
       "filename": "iam_policy.tf",
       "includeName": "",
       "menuCaption": "iam_policy.tf",
@@ -88,7 +92,9 @@
       "menuSeparatorBefore": false,
       "hideFromInstanceActionsMenu": false,
       "hideFromBottomMenu": false,
-      "menuPath": ""
+      "menuPath": "",
+      "dockerImage": "",
+      "customCommand": ""
     }
   ],
   "allowedChildren": []

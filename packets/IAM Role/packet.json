@@ -1,5 +1,6 @@
 {
   "version": "1.0",
+  "id": "76657ba8-7a80-4e22-95bb-6b22b1a8325f",
   "label": "%iam_role_name% instance profile: %use_for_instance_profile%",
   "type": "IAM_ROLE",
   "autoExpand": false,
@@ -9,6 +10,7 @@
   "key": "TF-AWS-SECURITY-GROUP",
   "attributes": [
     {
+      "id": "8f606848-71a2-43fd-a30b-2f8c2e9e56dc",
       "name": "description",
       "caption": "description",
       "type": "java.lang.String",
@@ -22,11 +24,11 @@
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
-      "autoExport": true,
       "inputPrompt": "",
       "scope": "Instance"
     },
     {
+      "id": "b06dd115-d564-4325-adf0-6c435117fe1b",
       "name": "iam_role_name",
       "caption": "Name",
       "type": "java.lang.String",
@@ -40,11 +42,11 @@
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
-      "autoExport": true,
       "inputPrompt": "",
       "scope": "Instance"
     },
     {
+      "id": "f161948a-6ce6-4224-9a47-d2d69ddaa422",
       "name": "use_for_instance_profile",
       "caption": "Use for instance profile",
       "type": "java.lang.Boolean",
@@ -59,7 +61,6 @@
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
-      "autoExport": true,
       "inputPrompt": "",
       "tooltip": "Select this checkbox if this role can be attached to instances",
       "scope": "Instance",
@@ -68,7 +69,7 @@
   ],
   "files": [
     {
-      "guid": "0cf7737e-1090-4eac-9627-8736520f5883",
+      "id": "0cf7737e-1090-4eac-9627-8736520f5883",
       "filename": "iam_role.tf",
       "includeName": "",
       "menuCaption": "iam_role.tf",
@@ -87,7 +88,9 @@
       "menuSeparatorBefore": false,
       "hideFromInstanceActionsMenu": false,
       "hideFromBottomMenu": false,
-      "menuPath": ""
+      "menuPath": "",
+      "dockerImage": "",
+      "customCommand": ""
     }
   ],
   "allowedChildren": []

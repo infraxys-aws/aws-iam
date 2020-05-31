@@ -1,16 +1,17 @@
 {
   "version": "1.0",
+  "id": "411c805c-c962-4191-915e-a4355e181298",
   "label": "Attach %policy_name%",
   "type": "AWS-IAM-POLICY-ATTACHMENT",
   "autoExpand": false,
   "skipEveryInstanceFiles": false,
   "limitToAllowedChildren": false,
   "autoGenerate": false,
-  "inheritFilesFromPacketGuid": "",
   "key": "",
   "infoHtml": "",
   "attributes": [
     {
+      "id": "91296df8-a1f5-43a6-8790-295ce48b53e8",
       "name": "policy_name",
       "caption": "Policy name",
       "type": "java.lang.String",
@@ -21,13 +22,13 @@
       "required": true,
       "isPartOfKey": true,
       "listOfValues": "ReadOnlyAccess,AdministratorAccess",
+      "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": false,
       "cloneAttribute": true,
-      "autoExport": true,
       "inputPrompt": "",
       "tooltip": "\u003cp\u003eAdd the name of the AWS-managed policy to attach.\u003c/p\u003e",
       "scope": "Instance"
@@ -35,7 +36,7 @@
   ],
   "files": [
     {
-      "guid": "d775129c-6792-49d3-bda7-5fefaadf1d31",
+      "id": "d775129c-6792-49d3-bda7-5fefaadf1d31",
       "filename": "aws_managed_policy_attachment.tf",
       "includeName": "",
       "menuCaption": "aws_managed_policy_attachment.tf",
@@ -54,7 +55,9 @@
       "menuSeparatorBefore": false,
       "hideFromInstanceActionsMenu": false,
       "hideFromBottomMenu": false,
-      "menuPath": ""
+      "menuPath": "",
+      "dockerImage": "",
+      "customCommand": ""
     }
   ],
   "allowedChildren": []
