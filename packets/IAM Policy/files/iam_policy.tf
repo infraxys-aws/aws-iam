@@ -3,7 +3,7 @@
 
 resource "aws_iam_role_policy" "$policyName" {
   name = "$policyName"
-  role = "${D}{aws_iam_role.${roleName}.id}"
+  role = aws_iam_role.${roleName}.id
   policy = <<EOF
 $instance.getAttribute("policy")  
 EOF

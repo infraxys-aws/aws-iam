@@ -6,6 +6,6 @@ data "aws_iam_policy" "$policyName" {
 }
 
 resource "aws_iam_role_policy_attachment" "${policyName}-attachment" {
-  role = "${D}{aws_iam_role.${roleName}.id}"
+  role = aws_iam_role.${roleName}.id
   policy_arn = data.aws_iam_policy.${policyName}.arn
 }

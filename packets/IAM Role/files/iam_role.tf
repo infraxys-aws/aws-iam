@@ -25,6 +25,6 @@ EOF
 #if ($useForInstanceProfile == "1")
 resource "aws_iam_instance_profile" "$iamRoleName" {
   name = "${iamRoleName}"
-  role = "#[[$]]#{aws_iam_role.${iamRoleName}.name}"
+  role = aws_iam_role.${iamRoleName}.name
 }
 #end
